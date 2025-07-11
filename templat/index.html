@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" type="image/jpg" href="../manish.jpg">
+    <style>
+      /* Animation for popup */
+      .popup-anime {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 0.5s;
+      }
+      .popup-anime-content {
+        background: #fff;
+        padding: 2rem 2.5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        text-align: center;
+        animation: popUp 0.5s;
+      }
+      .popup-anime button {
+        margin-top: 1rem;
+        padding: 0.5rem 1.5rem;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes popUp {
+        0% { transform: scale(0.7); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span style="border-bottom: 3px solid #000000;">MANISH LERCHA</span></h1>
+                    <p>Welcome to my professional portfolio website showcasing my skills and experience.</p>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+                <div class="hero-image">
+                   <img src="../manish.jpg"/>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A dedicated professional with expertise in various office productivity tools and design software. My journey in this field has allowed me to develop strong technical skills coupled with creative problem-solving abilities.</p>
+                    <p>I take pride in my ability to efficiently manage tasks across different software platforms, ensuring smooth operations and quality outputs. My attention to detail and commitment to continuous learning helps me stay updated with the latest tools and techniques.</p>
+                    <p>Beyond technical skills, I believe in maintaining professional integrity, meeting deadlines consistently, and delivering work that exceeds expectations.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fe96f90a-e052-4989-9cf7-67abee8ba3e6.png" alt="Person working on laptop and taking notes in a minimalist office setting" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background-color: #f5f5f5;">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Office Productivity</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MS Excel</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MS Word</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Typing (English)</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Typing (Hindi)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>PowerPoint</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design Software</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Adobe Photoshop</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Canva</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - Present</div>
+                        <h3>Current Position</h3>
+                        <p>aBHINAV PUBLIC SR. SEC. SCHOOL</p>
+                        <p>I have 2 year experience in Computer Operating .</p>
+                        <p>Handle administrative tasks efficiently while maintaining accuracy in all documents.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017 - 2020</div>
+                        <h3>Previous Position</h3>
+                        <p>Company Name</p>
+                        <p>Handled data entry operations, prepared excel reports, and assisted in creating marketing materials using Canva.</p>
+                        <p>Developed workflows to streamline administrative processes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2015 - 2017</div>
+                        <h3>Junior Position</h3>
+                        <p>Company Name</p>
+                        <p>Assisted senior staff with document preparation and typing tasks in both English and Hindi.</p>
+                        <p>Learned foundational skills in office productivity software.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-container">
+                <div class="resume-column">
+                    <h3>Education</h3>
+                    <ul style="list-style-type: none; margin-top: 20px;">
+                        <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #e0e0e0;">
+                            <h4>Bachelor's Arts</h4>
+                            <p> VMOU</p>
+                            <p>2018 - 2022</p>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <h4>School</h4>
+                            <p>Aai ji Vidya mander Sr. Sec. School Bilara</p>
+                            <p>2017 - 2018</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume-column">
+                    <h3>Professional Training</h3>
+                    <ul style="list-style-type: none; margin-top: 20px;">
+                        <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #e0e0e0;">
+                            <h4>Advanced MS Office</h4>
+                            <p>Training Institute</p>
+                            <p>2016</p>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <h4>Graphic Design Fundamentals</h4>
+                            <p>Online Course</p>
+                            <p>2018</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: #f5f5f5;">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>8769380211</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>manishlercha36@gmail.com </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Bader ka Bass Bilara Jodhpur (Raj)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation Popup -->
+    <div class="popup-anime" id="popupAnime">
+      <div class="popup-anime-content">
+        <h2>Welcome to My Portfolio!</h2>
+        <p>welcome to My Website</p>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>Thank You.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Script for form submission and popup animation -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. I will get back to you soon!');
+            this.reset();
+        });
+
+        // Animation popup logic
+        function closePopup() {
+          document.getElementById('popupAnime').style.display = 'none';
+        }
+        window.onload = function() {
+          var popup = document.getElementById('popupAnime');
+          popup.style.display = 'flex';
+        };
+    </script>
+</body>
+</html>
+
